@@ -3,6 +3,7 @@
 Coder Manual Project Application
 Subscription-based web application
 https://codermanual.com
+***
 
 Things you may want to cover:
 
