@@ -3,7 +3,6 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
-         
   belongs_to :plan
   attr_accessor :stripe_card_token
   
@@ -14,4 +13,5 @@ class User < ActiveRecord::Base
       save!
     end
   end
+
 end
