@@ -1,4 +1,5 @@
 <%= @user.profile.first_name %> <%= @user.profile.last_name %><br/>
+<%= image_tag @user.profile.avatar.url %><br/>
 <%= @user.profile.job_title %><br/>
 <% if current_user.plan_id == 2 %>
   <%= @user.profile.phone_number %><br/>
