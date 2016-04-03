@@ -22,3 +22,9 @@
   background-color: #5bc0de;
   border-color: #46b8da;
 }
+.avatar-style {
+  border: 1px solid black;
+  -webkit-box-shadow: 0px 6px 4px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 6px 4px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 6px 4px 0px rgba(50, 50, 50, 0.75);
+}
