@@ -67,3 +67,6 @@ gem 'stripe', '1.16.1'
 gem 'figaro', '1.0.0'
 #usage paperclip for image uploads
 gem 'paperclip', '4.2.1'
+
+#Autoprefixer is a tool to parse CSS and add vendor prefixes to CSS
+gem "autoprefixer-rails"

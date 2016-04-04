@@ -1,3 +1,10 @@
+/* Users Show Page Styles */
+
+.user-show-avatar {
+  height: 128px;
+  width: 128px;
+}
+
 .job-title-icon {
   display: inline-block;
   width: 30px;
@@ -27,4 +34,12 @@
   -webkit-box-shadow: 0px 6px 4px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow:    0px 6px 4px 0px rgba(50, 50, 50, 0.75);
   box-shadow:         0px 6px 4px 0px rgba(50, 50, 50, 0.75);
+}
+
+/* Users Index Page Styles */
+.user-index-avatar {
+  border-radius: 50%;
+}
+.well.white-bg {
+  background-color: white;
 }
