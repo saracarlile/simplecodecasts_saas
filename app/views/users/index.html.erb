@@ -1,32 +1,34 @@
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
-    <ul class="list-unstyled">
-      <% @users.each do |user| %>
-        <% if user.profile %>
-        <li>
-          <div class="well row <%= cycle('white-bg', '') %>">
-            <div class="col-sm-4 text-center">
-              <% if user.profile.avatar %>
-                <%= link_to user do %>
-                  <%= image_tag user.profile.avatar.url(:thumb), class: 'user-index-avatar' %>
-                <% end %>
-              <% end %>
-            </div>
-            <div class="col-sm-8">
-              <%= link_to user do %>
-                <h2><%= user.profile.first_name %> <%= user.profile.last_name %></h2>
-              <% end %>
-              <p>
-                  <%= user.profile.job_title %>
-                  <% if user.plan_id == 2 %>
-                  <span class="label label-danger">PRO</span>
+    <h1>Dev Match Community</h1>
+      <p>Welcome to the Dev Match community. Users must fill out a profile in order to be visible in the community.</p>
+        <ul class="list-unstyled">
+          <% @users.each do |user| %>
+            <% if user.profile %>
+            <li>
+              <div class="well row <%= cycle('white-bg', '') %>">
+                <div class="col-sm-4 text-center">
+                  <% if user.profile.avatar %>
+                    <%= link_to user do %>
+                      <%= image_tag user.profile.avatar.url(:thumb), class: 'user-index-avatar' %>
+                    <% end %>
                   <% end %>
-              </p>
-            </div>
-          </div>
-        </li>
-        <% end %>
-      <% end %>
-    </ul>
+                </div>
+                <div class="col-sm-8">
+                  <%= link_to user do %>
+                    <h2><%= user.profile.first_name %> <%= user.profile.last_name %></h2>
+                  <% end %>
+                  <p>
+                      <%= user.profile.job_title %>
+                      <% if user.plan_id == 2 %>
+                      <span class="label label-danger">PRO</span>
+                      <% end %>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <% end %>
+          <% end %>
+        </ul>
   </div>
 </div>
